@@ -22,7 +22,6 @@ export default function ProfileForm() {
 
   async function formSubmitHandler(event: any) {
     event.preventDefault();
-    console.log("line 2 submit form handler function called");
     var formData = {
       final_mailing_address: mailingAddress,
       street_address: streetAddress,
