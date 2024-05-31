@@ -1,4 +1,4 @@
-export async function chunkAddress(mailingaddress) {
+export async function chunkAddress(mailingaddress: string) {
   console.log("line 2 chunkaddress function called");
   console.log(mailingaddress);
   const res = await fetch("http://localhost:8000/address_chunk/", {
@@ -15,7 +15,7 @@ export async function chunkAddress(mailingaddress) {
   return data.chunked_mailing_address;
 }
 
-export async function submitForm(formData) {
+export async function submitForm(formData:any) {
   console.log("line 20 submit form action called");
   console.log(formData);
   console.log(JSON.stringify(formData));
