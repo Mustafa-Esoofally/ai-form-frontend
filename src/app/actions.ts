@@ -1,8 +1,7 @@
 export async function chunkAddress(mailingaddress: string) {
   console.log("line 2 chunkaddress function called");
   console.log(mailingaddress);
-  // const res = await fetch("http://localhost:8000/address_chunk/", {
-  const res = await fetch("https://ai-form-backend-3kzht7xhi-mustafa-esoofallys-projects.vercel.app/address_chunk/", {
+  const res = await fetch("http://localhost:8000/address_chunk/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -18,8 +17,7 @@ export async function chunkAddress(mailingaddress: string) {
 
 export async function submitForm(formData:any) {
   console.log("line 20 submit form action called");
-  // const res = await fetch("http://localhost:8000/save_address/", {
-  const res = await fetch("https://ai-form-backend-3kzht7xhi-mustafa-esoofallys-projects.vercel.app/save_address/", {
+  const res = await fetch("http://localhost:8000/save_address/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
