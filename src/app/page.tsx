@@ -63,7 +63,7 @@ export default function ProfileForm() {
         </h2>
 
         <p className="mt-1 text-sm leading-6 text-gray-600">
-          Type your entire mailing address below and we'll take care of the rest
+          Type your entire mailing address below and we&apos;ll take care of the rest
         </p>
 
         <div className="grid w-full gap-1.5">
