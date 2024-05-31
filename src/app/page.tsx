@@ -20,7 +20,7 @@ export default function ProfileForm() {
   const [loading, isloading] = useState(false);
   const [error, seterror] = useState(false);
 
-  async function formSubmitHandler(event) {
+  async function formSubmitHandler(event: any) {
     event.preventDefault();
     console.log("line 2 submit form handler function called");
     var formData = {
@@ -63,7 +63,8 @@ export default function ProfileForm() {
         </h2>
 
         <p className="mt-1 text-sm leading-6 text-gray-600">
-          Type your entire mailing address below and we&apos;ll take care of the rest
+          Type your entire mailing address below and we&apos;ll take care of the
+          rest
         </p>
 
         <div className="grid w-full gap-1.5">
